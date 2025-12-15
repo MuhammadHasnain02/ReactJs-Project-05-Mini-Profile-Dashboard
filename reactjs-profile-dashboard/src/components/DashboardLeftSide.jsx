@@ -14,8 +14,9 @@ function DashboardLeftSide() {
         ${darkMode ? "bg-gray-900 text-white border-gray-700" : "bg-gray-50 text-black border-gray-300"}`}>
 
       {/* Logo */}
-      <div className="flex items-center gap-3 cursor-pointer mb-4 pb-4 border-b border-gray-200"
-        onClick={() => navigation('/')}
+      <div onClick={() => navigation('/')}
+        className={`flex items-center gap-3 cursor-pointer mb-4 pb-4 border-b transition-all duration-300
+        ${darkMode ? "border-gray-700" : "border-gray-300"}`}
       >
         <div className="flex flex-row items-center justify-center 
           bg-gradient-to-tr from-blue-500 to-purple-600 rounded-full w-11 h-11 transition ease-in-out duration-500 hover:scale-105 cursor-pointer p-2 shadow-xl"
